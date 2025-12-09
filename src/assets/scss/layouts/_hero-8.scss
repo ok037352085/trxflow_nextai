@@ -1,0 +1,29 @@
+.hero-8 {
+	position: relative;
+	isolation: isolate;
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background-image: url("../img/hero-8-bg.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0.75;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background-image: url("../img/hero-8-img-2.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&__content {
+		padding-block-start: clamp(6.125rem, 7.36vw + 1rem, 8.75rem);
+	}
+}

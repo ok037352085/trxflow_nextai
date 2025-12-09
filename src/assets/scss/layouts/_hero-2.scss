@@ -1,0 +1,213 @@
+/* Hero 2 */
+@use "../global" as *;
+.hero-2 {
+	padding-block-start: clamp(6rem, 13.89vw + 1rem, 16.5rem);
+	padding-block-end: clamp(6rem, 10.52vw + 1rem, 12.5rem);
+	background-image: url(../img/shapes/hero-2-bg-shape.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	isolation: isolate;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		inset-inline: 0;
+		height: rem(200);
+		background-color: var(--bs-body-bg);
+		filter: blur(100px);
+		z-index: -1;
+		pointer-events: none;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		inset-inline: 0;
+		height: rem(200);
+		background-color: var(--bs-body-bg);
+		filter: blur(100px);
+		z-index: -1;
+		pointer-events: none;
+	}
+	&__content {
+		@media (min-width: 1600px) {
+			max-width: 1600px;
+			margin-inline: auto;
+		}
+	}
+	&__outer {
+		display: inline-block;
+		position: relative;
+		isolation: isolate;
+	}
+	&__inner {
+		width: rem(280);
+		height: rem(280);
+		max-width: 100%;
+		border-radius: 50%;
+		position: relative;
+		isolation: isolate;
+		&::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background-color: var(--bs-body-bg);
+			border-radius: 50%;
+			z-index: -1;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			inset: -1px;
+			background-image: linear-gradient(0deg, var(--bs-body-bg), var(--bs-primary));
+			border-radius: 50%;
+			z-index: -2;
+			animation: rotate360 5s linear infinite;
+		}
+	}
+	&__core {
+		width: rem(180);
+		height: rem(180);
+		border-radius: 50%;
+		background-color: var(--bs-body-bg);
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			inset: -1px;
+			background-image: linear-gradient(var(--bs-body-bg), var(--bs-primary));
+			border-radius: 50%;
+			z-index: -1;
+			animation: rotate360 5s linear infinite;
+		}
+	}
+	&__line-1 {
+		display: none;
+		@include screen(lg) {
+			display: inline-block;
+			max-width: 100%;
+			position: absolute;
+			bottom: 50%;
+			right: 100%;
+			transform: translateY(25%);
+			z-index: -3;
+		}
+	}
+	&__line-2 {
+		display: none;
+		@include screen(lg) {
+			display: inline-block;
+			max-width: 100%;
+			position: absolute;
+			top: 50%;
+			right: 100%;
+			transform: translateY(-25%);
+			z-index: -3;
+		}
+	}
+	&__line-3 {
+		display: none;
+		@include screen(lg) {
+			display: inline-block;
+			max-width: 100%;
+			position: absolute;
+			bottom: 50%;
+			left: 100%;
+			transform: translateY(25%);
+			z-index: -3;
+		}
+	}
+	&__line-4 {
+		display: none;
+		@include screen(lg) {
+			display: inline-block;
+			max-width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 100%;
+			transform: translateY(-25%);
+			z-index: -3;
+		}
+	}
+	&__images {
+		display: none;
+		@include screen(lg) {
+			display: inline-block;
+			position: absolute;
+			transform: scale(0.5);
+			z-index: -1;
+		}
+		@include screen(xl) {
+			transform: scale(0.75);
+		}
+		@include screen(xxl) {
+			transform: scale(1);
+		}
+		&-1 {
+			@include screen(lg) {
+				top: 20%;
+				left: 0%;
+			}
+			@include screen(xl) {
+				top: 10%;
+			}
+		}
+		&-2 {
+			@include screen(lg) {
+				top: 25%;
+				left: -5%;
+			}
+			@include screen(xl) {
+				left: 0;
+				z-index: -2;
+			}
+		}
+		&-3 {
+			@include screen(lg) {
+				top: 45%;
+				left: 0;
+			}
+			@include screen(xl) {
+				top: 50%;
+			}
+		}
+		&-4 {
+			@include screen(lg) {
+				top: 20%;
+				right: 0%;
+			}
+			@include screen(xl) {
+				top: 10%;
+			}
+		}
+		&-5 {
+			@include screen(lg) {
+				top: 25%;
+				right: -5%;
+			}
+			@include screen(xl) {
+				right: 0;
+				z-index: -2;
+			}
+		}
+		&-6 {
+			@include screen(lg) {
+				top: 45%;
+				right: 0;
+			}
+			@include screen(xl) {
+				top: 50%;
+			}
+		}
+	}
+	&__brand-section {
+		padding-block-start: clamp(6rem, 10.52vw + 1rem, 12.5rem);
+	}
+}
+[data-bs-theme="dark"] {
+	.hero-2 {
+		background-image: url(../img/shapes/hero-2-bg-shape-dark.png);
+	}
+}

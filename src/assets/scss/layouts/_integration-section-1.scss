@@ -1,0 +1,16 @@
+/* Integration Section */
+.integration-section-1 {
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 25%;
+		background: linear-gradient(
+			180deg,
+			rgba(83, 131, 255, 0.2) 0%,
+			rgba(53, 73, 255, 0.14) 100%
+		);
+		filter: blur(100px);
+		pointer-events: none;
+		opacity: 0.5;
+	}
+}

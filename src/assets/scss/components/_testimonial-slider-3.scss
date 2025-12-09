@@ -1,0 +1,5 @@
+/* Testimonial Slider 3 */
+@use "../global" as *;
+.testimonial-slider-3 {
+	backdrop-filter: blur(#{rem(25)});
+}

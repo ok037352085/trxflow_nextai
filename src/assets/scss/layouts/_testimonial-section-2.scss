@@ -1,0 +1,8 @@
+/* Testimonial Section 2 */
+
+@use "../global" as *;
+.testimonial-section-2 {
+	max-height: rem(700);
+	mask: linear-gradient(transparent, white 20%, white 80%, transparent);
+	overflow: hidden;
+}

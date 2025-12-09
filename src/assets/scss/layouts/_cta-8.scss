@@ -1,0 +1,23 @@
+/* CTA 8 */
+@use "../global" as *;
+.cta-8 {
+	background-image: linear-gradient(180deg, #040116 40.24%, rgba(4, 1, 22, 0) 100%),
+		radial-gradient(
+			117.36% 164.31% at -3.78% 50%,
+			rgba(0, 0, 0, 0) 0%,
+			#f65c34 81.3%,
+			#fbbcac 100%
+		);
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		background-image: url(../img/shapes/cta-8-bg.png);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: -1;
+		pointer-events: none;
+	}
+}

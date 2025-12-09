@@ -1,0 +1,85 @@
+/* Light Theme Variables */
+[data-bs-theme="light"] {
+	--bs-primary-bg-subtle: #efeaff;
+	--bs-primary-text-emphasis: #15063f;
+
+	--bs-secondary-bg-subtle: #f6f7fd;
+	--bs-secondary-text-emphasis: #03063a;
+
+	--bs-danger-bg-subtle: #feeaef;
+	--bs-danger-text-emphasis: #971837;
+
+	--bs-warning-bg-subtle: #fef7e6;
+	--bs-warning-text-emphasis: #966c00;
+
+	--bs-success-bg-subtle: #e8f9ee;
+	--bs-success-text-emphasis: #044d1d;
+
+	--bs-info-bg-subtle: #e6f9ff;
+	--bs-info-text-emphasis: #024153;
+
+	--bs-light-bg-subtle: #f8f9fa;
+	--bs-light-text-emphasis: #495058;
+
+	--bs-dark-bg-subtle: #ced4da;
+	--bs-dark-text-emphasis: #0d0e10;
+
+	// Shadow Color
+	--bs-box-shadow: 0px 10px 20px -4px rgba(145, 158, 171, 0.16);
+	--bs-box-shadow-sm: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	--bs-box-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+	&[data-theme="demo"] {
+		--bs-primary: #c7f32f;
+		--bs-primary-rgb: 199, 243, 47;
+		--bs-primary-text-emphasis: #79941d;
+		--bs-primary-bg-subtle: #f9feea;
+		--bs-primary-border-subtle: #f9feea;
+	}
+	&[data-theme="home-2"] {
+		--bs-primary: #6328ff;
+		--bs-primary-rgb: 99, 40, 255;
+		--bs-primary-text-emphasis: #15063f;
+		--bs-primary-bg-subtle: #efeaff;
+		--bs-primary-border-subtle: #efeaff;
+	}
+	&[data-theme="home-3"] {
+		--bs-primary: #c7f32f;
+		--bs-primary-rgb: 199, 243, 47;
+		--bs-primary-text-emphasis: #79941d;
+		--bs-primary-bg-subtle: #f6ffdb;
+		--bs-primary-border-subtle: #f6ffdb;
+	}
+	&[data-theme="home-4"] {
+		--bs-primary: #5c65ff;
+		--bs-primary-rgb: 92, 101, 255;
+		--bs-primary-text-emphasis: #03063a;
+		--bs-primary-bg-subtle: #f6f7fd;
+		--bs-primary-border-subtle: #f6f7fd;
+	}
+	&[data-theme="home-6"] {
+		--bs-primary: #f65c34;
+		--bs-primary-rgb: 246, 92, 52;
+		--bs-primary-text-emphasis: #963820;
+		--bs-primary-bg-subtle: #fbbcac;
+		--bs-primary-border-subtle: #fbbcac;
+		--bs-dark: #090a0c;
+		--bs-dark-rgb: 9, 10, 12;
+	}
+	&[data-theme="home-7"] {
+		--bs-dark: #090a0c;
+		--bs-dark-rgb: 9, 10, 12;
+	}
+	.light\:d-none {
+		display: none;
+	}
+	.light\:d-block {
+		display: block;
+	}
+	.light\:d-inline-block {
+		display: inline-block;
+	}
+	.light:filter-invert {
+		filter: invert(1);
+	}
+}

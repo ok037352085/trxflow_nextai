@@ -1,0 +1,13 @@
+/* Text Clip */
+.text-clip--primary {
+	background: -webkit-linear-gradient(var(--bs-white) 20%, var(--bs-primary) 65%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.text-clip--primary-alt {
+	background: -webkit-linear-gradient(0deg, var(--bs-white) 0%, var(--bs-primary) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

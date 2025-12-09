@@ -1,0 +1,60 @@
+/* Radius Circle */
+@use "../global" as *;
+.circle-container {
+	position: relative;
+	width: rem(460);
+	height: rem(460);
+}
+.circle-radius {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 1px solid rgba(var(--bs-light-rgb), 0.1);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: rotate360 16s linear infinite;
+	background-image: radial-gradient(
+		circle,
+		var(--dark-saas),
+		rgba(var(--bs-primary-rgb), 0.075)
+	);
+}
+.outer-circle {
+	animation-duration: 18s;
+}
+.middle-circle {
+	width: 75%;
+	height: 75%;
+	left: 12.5%;
+	top: 12.5%;
+	animation-duration: 14s;
+}
+.inner-circle {
+	width: 50%;
+	height: 50%;
+	left: 25%;
+	top: 25%;
+	animation-duration: 10s;
+}
+.dot {
+	position: absolute;
+	min-width: 1rem;
+	min-height: 1rem;
+}
+.dot--outer {
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.dot--middle {
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.dot--inner {
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

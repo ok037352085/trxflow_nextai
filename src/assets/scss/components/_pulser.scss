@@ -1,0 +1,45 @@
+/* Pulser */
+@use "../global" as *;
+.pulser {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: rem(250);
+	height: rem(250);
+	display: grid;
+	place-content: center;
+	border-radius: 50%;
+	background: rgba(13, 14, 16, 0.05);
+	backdrop-filter: blur(15px);
+	&__content {
+		position: relative;
+		isolation: isolate;
+		display: grid;
+		place-content: center;
+		width: rem(100);
+		height: rem(100);
+		background-image: linear-gradient(90deg, #885bfd 0%, #6328ff 68.76%);
+		border-radius: 50%;
+		&::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			animation: multiplePulse 2s linear infinite;
+			animation-delay: 0.75s;
+			border: 1px solid var(--bs-primary);
+			border-radius: 50%;
+			z-index: -1;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			animation: multiplePulse 2s linear infinite;
+			animation-delay: 1.5s;
+			border: 1px solid var(--bs-primary);
+			border-radius: 50%;
+			z-index: -1;
+		}
+	}
+}

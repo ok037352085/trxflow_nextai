@@ -1,0 +1,9 @@
+/* Footer 2 */
+
+.footer-2 {
+	border-radius: 3rem 3rem 0 0;
+	&__container {
+		border-radius: 3rem 3rem 0 0;
+		backdrop-filter: blur(3px);
+	}
+}

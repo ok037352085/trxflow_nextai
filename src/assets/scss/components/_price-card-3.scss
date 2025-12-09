@@ -1,0 +1,9 @@
+/* Price Card 3 */
+.price-card-3 {
+	background-color: var(--bs-primary-text-emphasis);
+}
+[data-bs-theme="dark"] {
+	.price-card-3 {
+		background-color: var(--bs-primary-bg-subtle);
+	}
+}

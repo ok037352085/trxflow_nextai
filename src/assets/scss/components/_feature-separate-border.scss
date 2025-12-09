@@ -1,0 +1,66 @@
+/* Border Style */
+@use "../global" as *;
+.feature-separate-border {
+	--feat-color-1: var(--bs-border-color);
+	--feat-color-2: var(--bs-border-color);
+	--feat-color-3: var(--bs-border-color);
+	--feat-color-4: var(--bs-border-color);
+	@include screen(xl) {
+		border: 1px solid;
+		border-image: linear-gradient(
+				45deg,
+				var(--feat-color-1),
+				var(--feat-color-2),
+				var(--feat-color-3),
+				var(--feat-color-4)
+			)
+			1;
+		&:nth-child(1) {
+			--feat-color-1: transparent;
+			--feat-color-4: transparent;
+			border-top: 0;
+			border-left: 0;
+		}
+		&:nth-child(2) {
+			--feat-color-4: transparent;
+			border-top: 0;
+			border-left: 0;
+		}
+		&:nth-child(3) {
+			--feat-color-4: transparent;
+			border-top: 0;
+			border-left: 0;
+		}
+		&:nth-child(4) {
+			--feat-color-4: transparent;
+			--feat-color-3: transparent;
+			border-top: 0;
+			border-left: 0;
+			border-right: 0;
+		}
+		&:nth-child(5) {
+			border-top: 0;
+			border-right: 0;
+			border-left: 0;
+			border-bottom: 0;
+		}
+		&:nth-child(6) {
+			--feat-color-1: transparent;
+			border-top: 0;
+			border-right: 0;
+			border-bottom: 0;
+		}
+		&:nth-child(7) {
+			--feat-color-1: transparent;
+			border-top: 0;
+			border-right: 0;
+			border-bottom: 0;
+		}
+		&:nth-child(8) {
+			--feat-color-1: transparent;
+			border-top: 0;
+			border-right: 0;
+			border-bottom: 0;
+		}
+	}
+}

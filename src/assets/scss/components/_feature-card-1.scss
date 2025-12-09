@@ -1,0 +1,12 @@
+/* Feature Card 1 */
+@use "../global" as *;
+.feature-card-1 {
+	background-image: linear-gradient(
+		180deg,
+		rgba(var(--bs-primary-rgb), 0.1) -59.74%,
+		rgba(var(--bs-dark-rgb), 0.5) 100%
+	);
+	&__pulse {
+		margin-bottom: -#{rem(270)};
+	}
+}

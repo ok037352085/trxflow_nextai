@@ -1,0 +1,70 @@
+/* Folder Card Style */
+@use "../global" as *;
+.folder-card {
+	position: relative;
+	isolation: isolate;
+	border-radius: 1.5rem;
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		border-radius: inherit;
+		background-image: radial-gradient(
+			73.43% 75.8% at 50% 45.64%,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(246, 92, 52, 0.15) 100%
+		);
+		background-color: rgba(14, 14, 16, 0.1);
+		backdrop-filter: blur(25px);
+
+		@include screen(md) {
+			-webkit-mask-image: url(../img/shapes/folder-shape.png);
+			mask-image: url(../img/shapes/folder-shape.png);
+			mask-size: 100% 100%;
+			mask-position: center top;
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+		}
+	}
+}
+.folder-card-1 {
+	--folder-card-bg: rgba(35, 35, 53, 0.6);
+	position: relative;
+	isolation: isolate;
+	border-radius: 1.5rem;
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		border-radius: inherit;
+		background-color: var(--folder-card-bg);
+		backdrop-filter: blur(25px);
+
+		@include screen(md) {
+			-webkit-mask-image: url(../img/shapes/folder-shape.png);
+			mask-image: url(../img/shapes/folder-shape.png);
+			mask-size: 100% 100%;
+			mask-position: center top;
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.folder-card-list {
+		li {
+			position: sticky;
+			&:nth-child(1) {
+				top: rem(120);
+			}
+			&:nth-child(2) {
+				top: calc(#{rem(120)} + 2.5rem);
+			}
+			&:nth-child(3) {
+				top: calc(#{rem(120)} + 4.5rem);
+			}
+		}
+	}
+}

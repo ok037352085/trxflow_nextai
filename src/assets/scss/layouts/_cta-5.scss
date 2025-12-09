@@ -1,0 +1,12 @@
+/* CTA 5 */
+
+.cta-5 {
+	border: 1px solid;
+	border-image: linear-gradient(
+			90deg,
+			transparent,
+			rgba(var(--bs-light-rgb), 0.2),
+			transparent
+		)
+		1;
+}

@@ -1,0 +1,167 @@
+/* CTA 7 */
+
+@use "../global" as *;
+.cta-7 {
+	&__line {
+		position: absolute;
+		&-1 {
+			bottom: 0;
+			right: 0;
+			transform: translate(-120px, -100px);
+		}
+		&-2 {
+			top: 50%;
+			right: 0;
+			transform: translateX(-120px);
+		}
+		&-3 {
+			top: calc(100% - 20px);
+			right: 0;
+			transform: translateX(-120px);
+		}
+		&-4 {
+			bottom: 0;
+			left: 0;
+			transform: translate(120px, -100px);
+		}
+		&-5 {
+			top: 50%;
+			left: 0;
+			transform: translateX(120px);
+		}
+		&-6 {
+			top: calc(100% - 20px);
+			left: 0;
+			transform: translateX(120px);
+		}
+	}
+	&__btn {
+		display: none;
+		@include screen(md) {
+			display: inline-flex;
+			position: absolute;
+		}
+		&-1 {
+			@include screen(md) {
+				left: 5%;
+				top: 27%;
+			}
+			@include screen(lg) {
+				left: 15%;
+				top: 31%;
+			}
+			@include screen(xl) {
+				left: 20%;
+				top: 33%;
+			}
+		}
+		&-2 {
+			@include screen(md) {
+				left: 15%;
+				top: 57%;
+			}
+			@include screen(lg) {
+				left: 5%;
+				top: 58%;
+			}
+			@include screen(xl) {
+				left: 13%;
+			}
+			@include screen(xxl) {
+				left: 18%;
+			}
+		}
+		&-3 {
+			@include screen(md) {
+				left: 25%;
+				top: 70%;
+			}
+			@include screen(lg) {
+				left: 31%;
+			}
+			@include screen(xl) {
+				left: 34%;
+			}
+			@include screen(xxl) {
+				left: 36%;
+			}
+		}
+		&-4 {
+			@include screen(md) {
+				left: 23%;
+				top: 86%;
+			}
+			@include screen(lg) {
+				left: 15%;
+			}
+			@include screen(xl) {
+				left: 20%;
+			}
+			@include screen(xxl) {
+				top: 82%;
+				left: 25%;
+			}
+		}
+		&-5 {
+			@include screen(md) {
+				right: 5%;
+				top: 29%;
+			}
+			@include screen(lg) {
+				right: 15%;
+				top: 33%;
+			}
+			@include screen(xl) {
+				right: 20%;
+				top: 35%;
+			}
+		}
+		&-6 {
+			@include screen(md) {
+				right: 15%;
+				top: 57%;
+			}
+			@include screen(lg) {
+				right: 5%;
+				top: 58%;
+			}
+			@include screen(xl) {
+				right: 13%;
+			}
+			@include screen(xxl) {
+				right: 18%;
+			}
+		}
+		&-7 {
+			@include screen(md) {
+				right: 25%;
+				top: 70%;
+			}
+			@include screen(lg) {
+				right: 31%;
+			}
+			@include screen(xl) {
+				right: 34%;
+			}
+			@include screen(xxl) {
+				right: 36%;
+			}
+		}
+		&-8 {
+			@include screen(md) {
+				right: 23%;
+				top: 86%;
+			}
+			@include screen(lg) {
+				right: 15%;
+			}
+			@include screen(xl) {
+				right: 20%;
+			}
+			@include screen(xxl) {
+				top: 82%;
+				right: 25%;
+			}
+		}
+	}
+}

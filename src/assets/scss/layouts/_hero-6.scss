@@ -1,0 +1,79 @@
+/* Hero 6 */
+@use "../global" as *;
+.hero-6 {
+	position: relative;
+	isolation: isolate;
+	padding-block-start: clamp(5.9rem, 10vw + 1rem, 11.87rem);
+	overflow: hidden;
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-image: url(../img/shapes/hero-6-grid.png);
+		background-repeat: repeat;
+		opacity: 0.08;
+		pointer-events: none;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset-inline: 0;
+		inset-block-end: 0;
+		height: rem(250);
+		background: linear-gradient(0deg, #6328ff -20.43%, rgba(99, 40, 255, 0) 76.69%);
+	}
+	&__title {
+		display: inline-block;
+		position: relative;
+		isolation: isolate;
+		&::before {
+			@include screen(md) {
+				content: "";
+				position: absolute;
+				inset: -1.25rem;
+				border: 1px dashed var(--bs-primary);
+				pointer-events: none;
+				z-index: -1;
+			}
+		}
+		&-sqr {
+			display: none;
+			@include screen(md) {
+				display: block;
+				width: 0.5rem;
+				height: 0.5rem;
+				background-color: var(--bs-primary);
+				position: absolute;
+				z-index: -1;
+				pointer-events: none;
+			}
+			&--1 {
+				@include screen(md) {
+					top: calc(-1.25rem + 1px);
+					left: calc(-1.25rem + 1px);
+				}
+			}
+			&--2 {
+				@include screen(md) {
+					top: calc(-1.25rem + 1px);
+					right: calc(-1.25rem + 1px);
+				}
+			}
+			&--3 {
+				@include screen(md) {
+					bottom: calc(-1.25rem + 1px);
+					left: calc(-1.25rem + 1px);
+				}
+			}
+			&--4 {
+				@include screen(md) {
+					bottom: calc(-1.25rem + 1px);
+					right: calc(-1.25rem + 1px);
+				}
+			}
+		}
+	}
+	&__img {
+		mask: linear-gradient(white 75%, transparent);
+	}
+}

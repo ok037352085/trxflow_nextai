@@ -1,0 +1,19 @@
+/* Feature 3 */
+.feature-3 {
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	background-image: url(../img/feature-bg-1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	&::after {
+		content: "";
+		position: absolute;
+		inset-inline: 0;
+		inset-block-start: 25%;
+		inset-block-end: 0;
+		background: var(--bs-body-bg);
+		filter: blur(50px);
+		z-index: -1;
+	}
+}

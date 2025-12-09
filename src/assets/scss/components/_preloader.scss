@@ -1,0 +1,22 @@
+/* Preloader */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--dark-saas);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: rgba(var(--bs-light-rgb), 1);
+	z-index: 9999;
+	&__content {
+		width: 100%;
+		text-align: center;
+	}
+	&__img {
+		animation: imageBeat 1.5s infinite;
+	}
+}

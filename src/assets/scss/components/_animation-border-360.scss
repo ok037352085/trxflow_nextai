@@ -1,0 +1,33 @@
+/* Border Animation */
+.animation-border-360 {
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		background: linear-gradient(
+			135deg,
+			var(--bs-primary),
+			transparent,
+			transparent,
+			transparent,
+			transparent,
+			#3838fa
+		);
+		animation: rotate360 20s linear infinite forwards;
+		z-index: -1;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 2px;
+		background-color: var(--bs-dark);
+		border: 1px solid rgba(var(--bs-light-rgb), 0.1);
+		border-radius: inherit;
+		z-index: -1;
+	}
+	&__inner {
+		inset: 2px;
+		border-radius: inherit;
+	}
+}

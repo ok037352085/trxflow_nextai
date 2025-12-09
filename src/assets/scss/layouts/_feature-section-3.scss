@@ -1,0 +1,16 @@
+/* Feature Section 3 */
+
+.feature-section-3 {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    &::before {
+        content: url(../img/shapes/feature-section-3-shape.png);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        pointer-events: none;
+    }
+}

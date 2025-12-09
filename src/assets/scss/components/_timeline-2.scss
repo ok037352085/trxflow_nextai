@@ -1,0 +1,24 @@
+/* Timeline 2 */
+
+.timeline-2 {
+	li {
+		position: relative;
+		isolation: isolate;
+		&::before {
+			content: "";
+			width: 1px;
+			position: absolute;
+			top: 0.5rem;
+			bottom: 0;
+			left: 1.5rem;
+			border-left: 1px dashed var(--bs-border-color);
+			pointer-events: none;
+			opacity: 0.5;
+		}
+		&:last-child {
+			&::before {
+				display: none;
+			}
+		}
+	}
+}

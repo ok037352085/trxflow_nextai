@@ -1,0 +1,38 @@
+/* Pricing Section 2 */
+@use "../global" as *;
+.pricing-section-2 {
+	background-image: url(../img/shapes/hero-2-bg-shape.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		inset-inline: 0;
+		height: rem(200);
+		background-color: var(--bs-body-bg);
+		filter: blur(100px);
+		z-index: -1;
+		pointer-events: none;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		inset-inline: 0;
+		height: rem(200);
+		background-color: var(--bs-body-bg);
+		filter: blur(100px);
+		z-index: -1;
+		pointer-events: none;
+	}
+}
+[data-bs-theme="dark"] {
+	.pricing-section-2 {
+		background-image: url(../img/shapes/hero-2-bg-shape-dark.png);
+	}
+}

@@ -1,0 +1,21 @@
+/* Price Card 4 */
+@use "../global" as *;
+.price-card-4 {
+	&:first-child {
+		@include screen(lg) {
+			position: relative;
+			transform: translateX(#{rem(20)});
+		}
+	}
+	&:nth-child(2) {
+		@include screen(lg) {
+			z-index: 1;
+		}
+	}
+	&:last-child {
+		@include screen(lg) {
+			position: relative;
+			transform: translateX(-#{rem(20)});
+		}
+	}
+}

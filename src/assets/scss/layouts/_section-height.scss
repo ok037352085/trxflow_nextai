@@ -1,0 +1,25 @@
+/* Section Height */
+
+@use "../global" as *;
+.section-height {
+	width: 100%;
+	height: rem(350);
+	@include screen(md) {
+		height: rem(450);
+	}
+	&--md {
+		@include screen(md) {
+			height: rem(650);
+		}
+	}
+	&--lg {
+		@include screen(md) {
+			height: rem(750);
+		}
+	}
+	&--xl {
+		@include screen(md) {
+			height: rem(850);
+		}
+	}
+}

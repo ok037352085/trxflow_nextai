@@ -1,0 +1,61 @@
+/* Gradient Border */
+.gradient-border {
+	--border-size: 1px;
+	--surface-color: var(--bs-dark);
+	--border-color-top: var(--bs-dark-bg-subtle);
+	--border-color-bottom: var(--bs-dark);
+	position: relative;
+	isolation: isolate;
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(var(--border-color-top), var(--border-color-bottom));
+		border-radius: inherit;
+		z-index: -2;
+		opacity: 0.3;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset: var(--border-size);
+		background: var(--surface-color);
+		border-radius: inherit;
+		z-index: -1;
+	}
+	&--2x {
+		--border-size: 2px;
+	}
+	&--3x {
+		--border-size: 3px;
+	}
+	&--4x {
+		--border-size: 4px;
+	}
+	&--surface-primary {
+		--surface-color: var(--bs-primary);
+	}
+	&--surface-dark-emphasis {
+		--surface-color: var(--bs-dark-text-emphasis);
+		--border-color-bottom: var(--bs-dark-text-emphasis);
+	}
+	&--surface-dark-alt {
+		--surface-color: var(--dark-saas);
+		--border-color-top: rgba(var(--bs-light-rgb), 0.4);
+	}
+	&--primary {
+		--border-color-top: var(--bs-primary);
+	}
+}
+[data-bs-theme="dark"] {
+	.gradient-border {
+		--border-color-top: var(--bs-dark-text-emphasis);
+		&--surface-dark-emphasis {
+			--surface-color: var(--bs-dark-bg-subtle);
+			--border-color-bottom: var(--bs-dark-bg-subtle);
+		}
+		&--primary {
+			--border-color-top: var(--bs-primary);
+		}
+	}
+}

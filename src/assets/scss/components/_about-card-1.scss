@@ -1,0 +1,30 @@
+/* About Card 1 */
+.about-card-1 {
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-image: linear-gradient(var(--bs-dark-bg-subtle), var(--bs-dark));
+		border-radius: inherit;
+		z-index: -1;
+		opacity: 0.25;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 1px;
+		background-color: rgba(var(--bs-dark-rgb), 0.75);
+		border-radius: inherit;
+		z-index: -1;
+	}
+}
+[data-bs-theme="dark"] {
+	.about-card-1 {
+		&::before {
+			background-image: linear-gradient(
+				var(--bs-dark-text-emphasis),
+				var(--bs-dark)
+			);
+		}
+	}
+}

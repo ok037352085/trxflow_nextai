@@ -1,0 +1,21 @@
+/* Testimonial Section 3 */
+
+@use "../global" as *;
+.testimonial-section-3 {
+	&::before {
+		@include screen(lg) {
+			content: "";
+			width: 100%;
+			height: rem(300);
+			max-width: rem(800);
+			background: linear-gradient(180deg, #5383ff 0%, #5135ff 100%);
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -2;
+			pointer-events: none;
+			filter: blur(150px);
+		}
+	}
+}

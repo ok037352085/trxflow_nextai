@@ -1,0 +1,21 @@
+/* Testimonial Slider 4 */
+.testimonial-slider-4 {
+	&__thumb {
+		.swiper-slide-thumb-active {
+			.border-light {
+				--bs-border-opacity: 0.5;
+				border-color: rgba(
+					var(--bs-primary-rgb),
+					var(--bs-border-opacity)
+				) !important;
+			}
+			.bg-dark {
+				--bs-bg-opacity: 0.1;
+				background-color: rgba(
+					var(--bs-primary-rgb),
+					var(--bs-bg-opacity)
+				) !important;
+			}
+		}
+	}
+}

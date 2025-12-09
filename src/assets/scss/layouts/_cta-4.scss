@@ -1,0 +1,52 @@
+
+/* CTA 4 */
+@use "../global" as *;
+.cta-4 {
+	&::before {
+		@include screen(md) {
+			content: "";
+			width: rem(350);
+			height: rem(350);
+			border: 1px solid rgba(var(--bs-light-rgb), 0.15);
+			border-radius: 50%;
+			position: absolute;
+			top: 75%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+			pointer-events: none;
+		}
+	}
+	&::after {
+		@include screen(md) {
+			content: "";
+			width: rem(550);
+			height: rem(550);
+			border: 1px dashed rgba(var(--bs-light-rgb), 0.15);
+			border-radius: 50%;
+			position: absolute;
+			top: 75%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+			pointer-events: none;
+		}
+	}
+	&__frosted {
+		display: none;
+		@include screen(md) {
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: rem(300);
+			height: rem(300);
+			border-radius: 50%;
+			background: linear-gradient(180deg, #5383ff 0%, #5135ff 100%);
+			filter: blur(150px);
+			z-index: -2;
+			pointer-events: none;
+		}
+	}
+}

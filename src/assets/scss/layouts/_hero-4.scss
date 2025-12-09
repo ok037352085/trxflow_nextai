@@ -1,0 +1,63 @@
+/* Hero 4 */
+@use "../global" as *;
+.hero-4 {
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	&::before {
+		content: "";
+		width: rem(1300);
+		height: 60%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background: linear-gradient(180deg, #5383ff 0%, rgba(53, 73, 255, 0.7) 100%);
+		filter: blur(250px);
+		z-index: -1;
+		pointer-events: none;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset-inline: 0;
+		bottom: 0;
+		height: 40%;
+		background: linear-gradient(180deg, rgba(13, 14, 16, 0) 0%, #0d0e10 83.9%);
+		z-index: -1;
+		pointer-events: none;
+	}
+	&__container {
+		padding-block-start: clamp(5.9rem, 10vw + 1rem, 11.875rem);
+		position: relative;
+		isolation: isolate;
+		&::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			z-index: -1;
+			background: radial-gradient(141.29% 50.25% at 49.75% 39.61%, transparent 0%, var(--bs-dark) 100%);
+		}
+	}
+	&__img {
+		@media (min-width: 1920px) {
+			transform: scale(1.1) translateX(2rem);
+			position: relative;
+		}
+	}
+	&__shape-1 {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		z-index: -2;
+		pointer-events: none;
+	}
+	&__shape-2 {
+		overflow: visible;
+		position: absolute;
+		inset: 0;
+		z-index: -3;
+		pointer-events: none;
+	}
+}

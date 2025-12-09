@@ -1,0 +1,29 @@
+/* Text Wing */
+@use "../global" as *;
+.text-wing {
+	display: inline-block;
+	position: relative;
+	isolation: isolate;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: calc(100% + 1rem);
+		width: 200%;
+		height: 1px;
+		border-bottom: 1px solid;
+		border-image: linear-gradient(90deg, transparent, rgba(var(--bs-light-rgb), 0.25))
+			1;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: calc(100% + 1rem);
+		width: 200%;
+		height: 1px;
+		border-bottom: 1px solid;
+		border-image: linear-gradient(90deg, rgba(var(--bs-light-rgb), 0.25), transparent)
+			1;
+	}
+}

@@ -1,0 +1,16 @@
+.pricing-section-4 {
+	position: relative;
+	isolation: isolate;
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background-image: url("../img/hero-8-bg.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0.7;
+	}
+}

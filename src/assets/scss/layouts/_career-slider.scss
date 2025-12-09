@@ -1,0 +1,10 @@
+/* Career Slider */
+
+@use "../global" as *;
+.career-slider {
+	li {
+		&:nth-child(odd) {
+			margin-top: 3rem;
+		}
+	}
+}
