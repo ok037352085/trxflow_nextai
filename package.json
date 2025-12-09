@@ -32,7 +32,7 @@
 		"gulp-sass": "^6.0.1",
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-touch-cmd": "^0.0.1",
-		"panini": "^0.1.1",
+		"panini": "^1.7.2",
 		"sass": "^1.85.1"
 	}
 }
