@@ -8,7 +8,7 @@
 	"scripts": {
 		"start": "gulp",
 		"build": "gulp build",
-		"dev": "gulp" 
+		"dev": "gulp"
 	},
 	"author": "bplugins",
 	"license": "ISC",
@@ -20,7 +20,8 @@
 		"@babel/preset-env": "^7.26.9",
 		"browser-sync": "^3.0.3",
 		"del": "^8.0.0",
-		"gulp": "^4.0.2",
+		"gh-pages": "^6.3.0",
+		"gulp": "^5.0.1",
 		"gulp-autoprefixer": "^9.0.0",
 		"gulp-babel": "^8.0.0",
 		"gulp-beautify": "^3.0.0",
@@ -29,9 +30,9 @@
 		"gulp-plumber": "^1.2.1",
 		"gulp-replace": "^1.1.4",
 		"gulp-sass": "^6.0.1",
-		"gulp-sourcemaps": "^3.0.0",
+		"gulp-sourcemaps": "^2.6.5",
 		"gulp-touch-cmd": "^0.0.1",
-		"panini": "^1.7.2",
+		"panini": "^0.1.1",
 		"sass": "^1.85.1"
 	}
 }
