@@ -7092,6 +7092,7 @@ small,
 }
 .background-video {
     position: fixed;
+    background: rgb(31, 0, 37);
     inset: 0;
     z-index: -1;
     pointer-events: none;
@@ -7104,6 +7105,7 @@ small,
     -o-object-fit: cover;
     object-fit: cover;
     transform: none !important;
+    opacity: 0.5;
 }
 /* Hero 4 */
 .hero-4 {
@@ -7781,7 +7783,7 @@ small,
 /* Testimonial Section 1 */
 .testimonial-section-1 {
     position: relative;
-    background: linear-gradient(var(--bs-tertiary-bg) 0%, transparent 21%, transparent 78%, var(--bs-light-bg-subtle) 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, transparent 21%, transparent 78%, rgba(0, 0, 0, 0.1) 100%);
     overflow: hidden;
 }
 @media (min-width: 1400px) {
@@ -7790,7 +7792,7 @@ small,
         position: absolute;
         inset: 0;
         pointer-events: none;
-        background: linear-gradient(270deg, var(--bs-tertiary-bg) 0%, transparent 21%, transparent 78%, var(--bs-tertiary-bg) 100%);
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, transparent 21%, transparent 78%, rgba(0, 0, 0, 0.1) 100%);
         z-index: 1;
     }
 }
@@ -7803,7 +7805,7 @@ small,
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: linear-gradient(270deg, var(--bs-tertiary-bg) 0%, transparent 21%, transparent 78%, var(--bs-tertiary-bg) 100%);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, transparent 21%, transparent 78%, rgba(0, 0, 0, 0.1) 100%);
     z-index: 1;
 }
 @media (min-width: 1400px) {
