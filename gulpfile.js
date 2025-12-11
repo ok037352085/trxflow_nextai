@@ -270,7 +270,7 @@ const serverTask = (done) => {
 		ghostMode: false,
 		notify: false,
 		open: true,
-		startPath: "/index.html"
+		startPath: "/home-2.html"
 	});
 	done();
 };
