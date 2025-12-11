@@ -4,10 +4,10 @@
 .testimonial-section-1 {
 	position: relative;
 	background: linear-gradient(
-		var(--bs-tertiary-bg) 0%,
+		rgba(0,0,0,0.3) 0%,
 		transparent 21%,
 		transparent 78%,
-		var(--bs-light-bg-subtle) 100%
+		rgba(0,0,0,0.1) 100%
 	);
 	overflow: hidden;
 	&::after {
@@ -18,10 +18,10 @@
 			pointer-events: none;
 			background: linear-gradient(
 				270deg,
-				var(--bs-tertiary-bg) 0%,
+				rgba(0,0,0,0.3) 0%,
 				transparent 21%,
 				transparent 78%,
-				var(--bs-tertiary-bg) 100%
+				rgba(0,0,0,0.1) 100%
 			);
 			z-index: 1;
 		}
@@ -37,10 +37,10 @@
 			pointer-events: none;
 			background: linear-gradient(
 				270deg,
-				var(--bs-tertiary-bg) 0%,
+				rgba(0,0,0,0.3) 0%,
 				transparent 21%,
 				transparent 78%,
-				var(--bs-tertiary-bg) 100%
+				rgba(0,0,0,0.1) 100%
 			);
 			z-index: 1;
 			@include screen(xxl) {
