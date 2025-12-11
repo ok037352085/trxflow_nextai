@@ -25,6 +25,7 @@ const route = {
 		css: "dist/assets/css/",
 		fontStyle: "dist/assets/css/",
 		img: "dist/assets/img/",
+		video: "dist/assets/video/",
 		fonts: "dist/assets/fonts/",
 	},
 	src: {
@@ -43,7 +44,8 @@ const route = {
 		bsPath: "node_modules/bootstrap/scss/**/*.*",
 		bsDest: "src/assets/scss/bootstrap/scss/",
 		bs: "src/assets/scss/bootstrap/*.*",
-		img: "src/assets/img/**/*.{jpg,png,gif,svg,webp,mp4}",
+		img: "src/assets/img/**/*.{jpg,png,gif,svg,webp}",
+		video: "src/assets/video/**/*.{mp4, webm}",
 		fonts: "src/assets/fonts/**/*.*",
 		fontStyle: "src/assets/scss/fonts/*.*",
 	},
@@ -59,6 +61,7 @@ const route = {
 		script: "src/assets/js/*.*",
 		jsPlugins: "src/assets/js/vendor/*.*",
 		img: "src/assets/img/**/*.{jpg,png,gif,svg,webp}",
+		video: "src/assets/video/**/*.{mp4,webm}",
 		fonts: "src/assets/fonts/**/*.*",
 		bs: "src/assets/scss/bootstrap/*.*",
 	},
@@ -230,12 +233,22 @@ const vendorScript = () => {
 // Image optimization
 const imageTask = () => {
 	return gulp
-		.src(route.src.img, { allowEmpty: true })
+		.src(route.src.img, { allowEmpty: true, buffer: true })
 		.pipe(plumber())
 		.pipe(newer(route.dist.img))
 		.pipe(gulp.dest(route.dist.img))
 		.pipe(touch())
 		.on("end", () => reload());
+};
+
+const videoTask = () => {
+    return gulp
+        .src(route.src.video, { allowEmpty: true, buffer: true }) // buffer 避免 stream 被截斷
+        .pipe(plumber())
+		.pipe(newer(route.dist.video))
+        .pipe(gulp.dest(route.dist.video)) // 輸出到 dist
+		.pipe(touch())
+        .on("end", () => reload());
 };
 
 // Transfer Fonts
@@ -257,7 +270,7 @@ const serverTask = (done) => {
 		ghostMode: false,
 		notify: false,
 		open: true,
-		startPath: "/home-2.html"
+		startPath: "/index.html"
 	});
 	done();
 };
@@ -272,6 +285,7 @@ const watchTask = () => {
 	gulp.watch(route.watch.script, jsTask);
 	gulp.watch(route.watch.jsPlugins, vendorScript);
 	gulp.watch(route.watch.img, imageTask);
+	gulp.watch(route.watch.video, videoTask);
 	gulp.watch(route.watch.fonts, fontsTask);
 	gulp.watch(route.src.bsScript, bsScriptCompile);
 };
@@ -291,6 +305,7 @@ const buildTask = gulp.series(
 			jsTask,
 			vendorScript,
 			imageTask,
+			videoTask,
 			fontsTask,
 			bsScriptCompile
 		)
@@ -305,6 +320,7 @@ export {
 	htmlTask as html,
 	scssTask as scss,
 	imageTask as images,
+	videoTask as videos,
 	jsTask as scripts,
 	cleanTask as clean,
 	serverTask as serve,
