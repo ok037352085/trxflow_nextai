@@ -741,6 +741,7 @@
 	.primary-header--transparent-light-alt {
 		&:not(.primary-header--boxed) {
 			background-color: var(--bs-dark-text-emphasis);
+			// background-color: #fff;
 			color: var(--bs-dark-bg-subtle);
 		}
 		.nav-link {

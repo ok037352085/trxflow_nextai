@@ -25,9 +25,9 @@
 	--bs-btn-bg: var(--bs-primary);
 	--bs-btn-border-color: var(--bs-primary);
 
-	--bs-btn-hover-color: var(--bs-light);
-	--bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary) 85%, black);
-	--bs-btn-hover-border-color: color-mix(in srgb, var(--bs-primary) 85%, black);
+	--bs-btn-hover-color: var(--bs-primary);
+	--bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary) 0%, white);
+	--bs-btn-hover-border-color: color-mix(in srgb, var(--bs-primary) 85%, white);
 
 	--bs-btn-active-color: var(--bs-light);
 	--bs-btn-active-bg: var(--bs-primary);

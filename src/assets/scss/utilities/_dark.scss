@@ -38,9 +38,11 @@
 		--bs-primary-bg-subtle: #79941d;
 		--bs-primary-border-subtle: #79941d;
 	}
-	&[data-theme="home-2"] {
-		--bs-primary: #6328ff;
-		--bs-primary-rgb: 99, 40, 255;
+	&[data-theme="index"] {
+		// --bs-primary: #6328ff;
+		--bs-primary: #00ff9193;
+		// --bs-primary-rgb: 99, 40, 255;
+		--bs-primary-rgb: 0, 191, 108;
 		--bs-primary-text-emphasis: #efeaff;
 		--bs-primary-bg-subtle: #15063f;
 		--bs-primary-border-subtle: #15063f;
