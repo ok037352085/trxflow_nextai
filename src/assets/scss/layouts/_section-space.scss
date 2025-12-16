@@ -1,8 +1,8 @@
 /* Section Spacing */ 
 .section-space-y {
 	// 120px
-	padding-block-start: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
-	padding-block-end: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+	// padding-block-start: clamp(1rem, 6.5vw + 1rem, 2.5rem);
+	// padding-block-end: clamp(1rem, 6.5vw + 1rem, 2.5rem);
 }
 .section-space-lg-y {
 	// 80px
@@ -27,7 +27,7 @@
 
 .section-space-top {
 	// 120px
-	padding-block-start: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+	// padding-block-start: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
 }
 .section-space-lg-top {
 	// 80px
