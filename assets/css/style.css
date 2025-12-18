@@ -7090,6 +7090,32 @@ small,
         right: 17%;
     }
 }
+.marquee {
+    width: 59vw;
+}
+@media (max-width: 450px) {
+    .marquee {
+        width: 80vw;
+    }
+}
+.card-animation:hover {
+    transition: 0.2s ease-in-out;
+    transform: translateY(-5px);
+}
+.card-animation img {
+    animation: brightnessPulse 6s ease-in-out infinite;
+}
+@keyframes brightnessPulse {
+    0% {
+        filter: brightness(0.8);
+    }
+    50% {
+        filter: brightness(1.2);
+    }
+    100% {
+        filter: brightness(0.8);
+    }
+}
 .background-video {
     position: fixed;
     background: rgba(0, 8, 4, 0.9529411765);

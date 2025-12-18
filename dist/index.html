@@ -1054,11 +1054,11 @@
     <div id="smooth-wrapper">
         <div id="smooth-content">
             <!-- Hero 區塊1~2: Hero主視覺 + 跑馬燈 -->
-            <div class="hero-3 container-max text-center overflow-hidden position-relative z-1" style="cursor: default; height: 90vh;">
+            <div class="hero-3 container-max text-center overflow-hidden position-relative z-1" style="cursor: default;">
                 <canvas id="snow" style="
                   position: absolute;
                   inset: 0;
-                  width: 100;
+                  width: 100%;
                   height: 100%;
                   pointer-events: none;
                   z-index: -100;
@@ -1090,7 +1090,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-none container-max py-3 px-4 px-xxl-6 gsap-fade-in" data-scroll-trigger="true" style="width: 59vw; display: flex; flex-direction: column; justify-content: flex-start; overflow: hidden; margin-top: 6rem;">
+                <div class="marquee bg-none container-max py-3 px-4 px-xxl-6" style="display: flex; flex-direction: column; justify-content: flex-start; overflow: hidden; margin-top: 6rem;">
                     <div class="scroller-x mb-4" data-direction="left">
                         <ul class="list list-row gap-6 align-items-center scroller-x__list">
                             <li>
@@ -1260,7 +1260,7 @@
                 </svg>
             </div>
             <!-- 內容 區塊3~6 -->
-            <div class="section-space-y" style="cursor: default; padding-top: 8rem;">
+            <div class="section-space-y" style="cursor: default; padding-top: 8rem; overflow: hidden;">
                 <!-- 區塊3 能量市場怎麼產生收入 -->
                 <div class="section-space-bottom position-relative" id="market">
                     <div class="section-space-sm-bottom text-center">
@@ -1374,16 +1374,16 @@
                                         <div class="row justify-content-center">
                                             <div class="col-md-8">
                                                 <h3 class="text-light overflow-hidden gsap-text-animation text-center" data-scroll-trigger="true" data-split-type="words" style="text-shadow: 1px 1px 10px #00bf6c"> TRXFlow 可以幫你做什麼？ </h3>
-                                                <p class="text-light text-center">一個入口，管理你在 TRON 上的能量、節點、兌換與專屬機器人</p>
+                                                <p class="text-light text-center gsap-text-animation" data-scroll-trigger="true" data-split-type="words">一個入口，管理你在 TRON 上的能量、節點、兌換與專屬機器人</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="section-space-bottom">
+                                <div class="section-space-bottom gsap-text-animation" data-scroll-trigger="true" data-split-type="words">
                                     <div class="container">
                                         <div class="row g-4">
                                             <div class="col-md-4">
-                                                <div class="platform-card-1 d-flex flex-column p-6 p-lg-8 rounded-4 h-100">
+                                                <div class="card-animation platform-card-1 d-flex flex-column p-6 p-lg-8 rounded-4 h-100 gsap-text-animation" data-scroll-trigger="true" data-split-type="words">
                                                     <div class="my-auto text-center">
                                                         <img src="./assets/img/1216_01.png" alt="image" class="img-fluid">
                                                     </div>
@@ -1394,8 +1394,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
-                                                <div class="platform-card-2 rounded-4 gradient-border h-100">
-                                                    <div class="platform-card-2__content p-6 p-lg-8 pb-0 pb-lg-0 rounded-4">
+                                                <div class="card-animation platform-card-2 rounded-4 gradient-border h-100">
+                                                    <div class="platform-card-2__content p-6 p-lg-8 pb-0 pb-lg-0 rounded-4 gsap-text-animation" data-scroll-trigger="true" data-split-type="words">
                                                         <h6 class="text-light"> USDT ⇄ TRX 自動兌幣服務 </h6>
                                                         <p class="mb-12 text-light"> 透過 TRXFlow 的兌換引擎，快速完成 USDT 與 TRX 的兌換與代收，<br> 適合需要穩定流量與結算能力的平台與團隊。 </p>
                                                         <div class="text-center">
@@ -1407,8 +1407,8 @@
                                             <div class="col-md-7">
                                                 <div class="row g-4">
                                                     <div class="col-12">
-                                                        <div class="position-relative z-1 p-6 p-lg-8 pb-lg-0 rounded-4 bg-dark bg-opacity-10 border border-light border-opacity-5 overflow-hidden">
-                                                            <div class="row g-4 align-items-center">
+                                                        <div class="card-animation position-relative z-1 p-6 p-lg-8 pb-lg-0 rounded-4 bg-dark bg-opacity-10 border border-light border-opacity-5 overflow-hidden">
+                                                            <div class="row g-4 align-items-center gsap-text-animation" data-scroll-trigger="true" data-split-type="words">
                                                                 <div class="col-md-6">
                                                                     <h6 class="text-light"> 專屬 TG 兌幣機器人（進階服務） </h6>
                                                                     <p class="mb-0 text-light"> 想經營自己的 TRX / USDT 兌換窗口？<br> TRXFlow 提供白牌 TG 機器人與後台管理介面，<br> 由我們負責鏈上結算與能量調度，你專注在社群與客戶經營。<br> （進階用戶可申請開通，詳細方案僅在登入後說明。） </p>
@@ -1432,8 +1432,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
-                                                        <div class="position-relative z-1 p-6 p-lg-8 rounded-4 bg-dark bg-opacity-10 border border-light border-opacity-5 overflow-hidden">
-                                                            <div class="row g-4 align-items-center">
+                                                        <div class="card-animation position-relative z-1 p-6 p-lg-8 rounded-4 bg-dark bg-opacity-10 border border-light border-opacity-5 overflow-hidden">
+                                                            <div class="row g-4 align-items-center gsap-text-animation" data-scroll-trigger="true" data-split-type="words">
                                                                 <div class="col-md-6">
                                                                     <h6 class="text-light">節點投票與資源調度</h6>
                                                                     <p class="mb-0 text-light"> 集中管理你的 TRX 資產，由系統自動分散到多個節點，<br> 在控制風險的前提下，爭取更穩定的節點分潤表現。 </p>
@@ -1459,10 +1459,10 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-5">
-                                                <div class="gradient-border d-flex flex-column h-100 rounded-4 text-center">
+                                                <div class="card-animation gradient-border d-flex flex-column h-100 rounded-4 text-center">
                                                     <img src="assets/img/card-img-5.png" alt="image" class="img-fluid">
                                                     <div class="mt-auto p-6 p-lg-8 px-xl-12">
-                                                        <h6 class="text-light">策略儀表板與報表</h6>
+                                                        <h6 class="text-light" data-scroll-trigger="true" data-split-type="words">策略儀表板與報表</h6>
                                                         <p class="mb-0 text-light"> 查看能量使用效率、節點回饋與兌換量，<br> 讓你了解 TRX 在背後是如何被運用與調度。 </p>
                                                     </div>
                                                 </div>
@@ -1480,7 +1480,7 @@
                         <div class="container">
                             <div class="row g-4 align-items-md-end justify-content-xl-between">
                                 <div class="col-md-7 col-xl-6">
-                                    <h3 class="mb-0 text-light" style="text-shadow: 1px 1px 10px #00bf6c">誰適合使用 TRX Flow？</h3>
+                                    <h3 class="mb-0 text-light gsap-text-animation" data-scroll-trigger="true" data-split-type="words" style="text-shadow: 1px 1px 10px #00bf6c">誰適合使用 TRX Flow？</h3>
                                 </div>
                                 <div class="col-md-5">
                                     <img src="assets/img/about-2-img-mobile.png" alt="image" class="img-fluid d-xl-none">
@@ -1500,7 +1500,7 @@
                                         <img src="assets/img/about-2-icon-1.png" alt="image" class="img-fluid dark:filter-invert">
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h6 class="text-light">高頻轉帳與交易玩家</h6>
+                                        <h6 class="text-light gsap-text-animation" data-scroll-trigger="true" data-split-type="words">高頻轉帳與交易玩家</h6>
                                         <p class="mb-0"> 每天在 TRON 上轉帳、打單、跑任務，<br>希望在確保交易順暢的前提下，把燃料成本壓到最低。 </p>
                                     </div>
                                 </div>
@@ -1511,7 +1511,7 @@
                                         <img src="assets/img/about-2-icon-2.png" alt="image" class="img-fluid dark:filter-invert">
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h6 class="text-light">場外商家與資金調度方</h6>
+                                        <h6 class="text-light gsap-text-animation" data-scroll-trigger="true" data-split-type="words">場外商家與資金調度方</h6>
                                         <p class="mb-0"> 有大量 USDT / TRX 收付往來， <br> 需要穩定、安全、可追蹤的兌換與代收工具。 </p>
                                     </div>
                                 </div>
@@ -1522,7 +1522,7 @@
                                         <img src="assets/img/about-2-icon-3.png" alt="image" class="img-fluid dark:filter-invert">
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h6 class="text-light">TRX 長期持有者與節點參與者</h6>
+                                        <h6 class="text-light gsap-text-animation" data-scroll-trigger="true" data-split-type="words">TRX 長期持有者與節點參與者</h6>
                                         <p class="mb-0"> 手上有一定數量 TRX，<br>想透過節點、能量與資源調度，建立長期鏈上現金流。 </p>
                                     </div>
                                 </div>
@@ -1533,7 +1533,7 @@
                                         <img src="assets/img/about-2-icon-4.png" alt="image" class="img-fluid dark:filter-invert">
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h6 class="text-light">Web3 工具與代理平台</h6>
+                                        <h6 class="text-light gsap-text-animation" data-scroll-trigger="true" data-split-type="words">Web3 工具與代理平台</h6>
                                         <p class="mb-0"> 希望把 TRX 能量與兌換能力，<br>直接嵌入自家產品或服務。 </p>
                                     </div>
                                 </div>
@@ -1659,34 +1659,36 @@
                         <div class="container usage-section-2 p-4 p-md-6 p-lg-12 p-xxl-18 rounded-4 h-100 position-relative z-1 overflow-hidden">
                             <div class="position-relative z-1 row g-4 align-items-center">
                                 <div class="col-md-6">
-                                    <h4 class="mb-8 text-light"> 品牌歷程時間軸 </h4>
-                                    <div class="d-flex align-items-center flex-wrap row-gap-4 column-gap-6 mt-15">
-                                    </div>
+                                    <h4 class="mb-8 text-light gsap-text-animation" data-scroll-trigger="true" data-split-type="words"> 品牌歷程時間軸 </h4>
+                                    <!-- <div
+            							class="d-flex align-items-center flex-wrap row-gap-4 column-gap-6 mt-15"
+            						>
+            						</div> -->
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 gsap-text-animation" data-scroll-trigger="true" data-split-type="words">
                                     <ul class="list timeline-2">
                                         <li class="d-flex align-items-start gap-8 pb-12">
                                             <div class="d-grid place-content-center w-12 h-12 rounded-circle gradient-border gradient-border--surface-dark shadow-lg fw-bold text-light flex-shrink-0"> 2018 </div>
                                             <div class="flex-grow-1">
-                                                <h6 class="text-light">開始在 TRON 鏈質押 TRX、參與節點與能量市場</h6>
+                                                <h6 class="text-light" style="font-size: 20px;">開始在 TRON 鏈質押 TRX、參與節點與能量市場</h6>
                                             </div>
                                         </li>
                                         <li class="d-flex align-items-start gap-8 pb-12">
                                             <div class="d-grid place-content-center w-12 h-12 rounded-circle gradient-border gradient-border--surface-dark shadow-lg fw-bold text-light flex-shrink-0"> 2020 </div>
                                             <div class="flex-grow-1">
-                                                <h6 class="text-light">建立多節點協作與資源調度模型</h6>
+                                                <h6 class="text-light" style="font-size: 20px;">建立多節點協作與資源調度模型</h6>
                                             </div>
                                         </li>
                                         <li class="d-flex align-items-start gap-8 pb-12">
                                             <div class="d-grid place-content-center w-12 h-12 rounded-circle gradient-border gradient-border--surface-dark shadow-lg fw-bold text-light flex-shrink-0"> 2023 </div>
                                             <div class="flex-grow-1">
-                                                <h6 class="text-light">上線自動兌幣系統與 Telegram 機器人</h6>
+                                                <h6 class="text-light" style="font-size: 20px;">上線自動兌幣系統與 Telegram 機器人</h6>
                                             </div>
                                         </li>
                                         <li class="d-flex align-items-start gap-8 pb-12">
                                             <div class="d-grid place-content-center w-12 h-12 rounded-circle gradient-border gradient-border--surface-primary shadow-lg fw-bold text-light flex-shrink-0"> 2025 </div>
                                             <div class="flex-grow-1">
-                                                <h6 class="text-light">TRXFlow 正式整合為一站式 TRON 生態技術服務平台</h6>
+                                                <h6 class="text-light" style="font-size: 20px;">TRXFlow 正式整合為一站式 TRON 生態技術服務平台</h6>
                                             </div>
                                         </li>
                                     </ul>
