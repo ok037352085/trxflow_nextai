@@ -7116,6 +7116,11 @@ small,
         filter: brightness(0.8);
     }
 }
+@media (max-width: 767px) {
+    .whotext {
+        text-align: center;
+    }
+}
 .background-video {
     position: fixed;
     background: rgba(0, 8, 4, 0.9529411765);
