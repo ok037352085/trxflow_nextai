@@ -140,6 +140,17 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
+	//nav-link active toggle 
+	document.querySelectorAll('.navbar .nav-link').forEach(link => {
+		link.addEventListener('click', () => {
+		document
+			.querySelectorAll('.navbar .nav-link.is-current')
+			.forEach(el => el.classList.remove('is-current'));
+
+		link.classList.add('is-current');
+		});
+	});
+
 	/**
 	 * Theme Settings (Dark / Light)
 	 */

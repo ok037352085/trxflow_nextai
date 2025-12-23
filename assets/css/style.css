@@ -6546,6 +6546,63 @@ small,
 [data-bs-theme=dark] .primary-header-crossed .primary-header--transparent-light-alt .nav-link.active {
     color: var(--bs-primary);
 }
+.nav-text {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #00bf6c;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.nav-text:hover::after {
+    transform: scaleX(1);
+}
+.navbar .nav-link:hover .nav-text {
+    color: #fff;
+}
+.navbar .nav-link:hover .nav-text::after {
+    transform: scale(1);
+}
+.navbar .nav-link.active .nav-text {
+    color: #fff;
+    font-weight: 600;
+}
+.navbar .nav-link.active .nav-text::after {
+    transform: sacleX(1);
+}
+@media (hover: hover) {
+    .navbar .nav-link:hover .nav-text {
+        color: #fff;
+    }
+    .navbar .nav-link:hover .nav-text::after {
+        transform: scaleX(1);
+    }
+}
+@media (max-width: 1200px) {
+    .nav-text {
+        font-size: 14px;
+    }
+}
+.navbar .nav-link.is-current .nav-text {
+    color: #fff;
+    font-weight: 600;
+}
+.navbar .nav-link.is-current .nav-text::after {
+    transform: scaleX(1);
+}
+.navbar-collapse.show {
+    background: #000;
+}
 /* Hero 1 */
 .hero-1 {
     position: relative;
@@ -7105,15 +7162,35 @@ small,
 .card-animation img {
     animation: brightnessPulse 6s ease-in-out infinite;
 }
+.img-01,
+.img-02 {
+    width: 30%;
+    position: absolute;
+    right: 0;
+}
+.img-01 {
+    top: -1rem;
+}
+.img-02 {
+    top: 1rem;
+}
+@media (max-width: 767px) {
+    .img-01,
+    .img-02 {
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+}
 @keyframes brightnessPulse {
     0% {
-        filter: brightness(0.8);
+        filter: brightness(0.6);
     }
     50% {
-        filter: brightness(1.2);
+        filter: brightness(1);
     }
     100% {
-        filter: brightness(0.8);
+        filter: brightness(0.6);
     }
 }
 @media (max-width: 767px) {

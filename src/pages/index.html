@@ -12,25 +12,18 @@ bodyClass: bg-body-tertiary
 
 <!-- Hero 區塊1~2: Hero主視覺 + 跑馬燈 -->
 <div class="hero-3 container-max text-center overflow-hidden position-relative z-1" style="cursor: default;">
-	<canvas
-    id="snow"
-    style="
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: -100;
-	  color: #ccc;
-    "
-  ></canvas>
+	<!-- HTML -->
+	<!-- <canvas id="bg" style="position:absolute; top:0; left:0;"></canvas> -->
+	<canvas id="snow" style="position:absolute; top:0; left:0; opacity: 0.2;"></canvas>
+
 	<div class="container position-relative">
 		<div class="row justify-content-center">
 			<div class="col-md-10 col-xl-9">
 				<div
 					class="d-inline-flex align-items-center gap-3 py-1 px-3 rounded overflow-hidden position-relative z-1 mb-4 hero-3__alert">
 					<span
-						class="line-clamp line-clamp--1 flex-grow-1 fs-14 text-light fw-medium text-start"
+						class="line-clamp line-clamp--1 flex-grow-1 fs-14 fw-medium text-start"
+						style="color: #00ff22a8;"
 					>
 						TRON 生態鏈上技術服務
 					</span>
@@ -71,7 +64,7 @@ bodyClass: bg-body-tertiary
 			</div>
 			<div class="col-xxl-10">
 				<div class="section-space-lg-top position-relative z-1">
-					<p class="text-light">已累積超過 1,000+ 個平台與 TG 機器人窗口接入 TRXFlow ・ 自 2018 年起深耕 TRON 能量與節點市場</p>
+					<p class="text-light">自 2018 年起深耕 TRON 能量與節點市場 ・ 已累積超過 1,000+ 個平台與 Telegram BOT 窗口接入 TRXFlow</p>
 				</div>
 			</div>
 		</div>
@@ -371,8 +364,8 @@ bodyClass: bg-body-tertiary
 								<a class="link d-inline-block text-light hover:text-primary gsap-text-animation" data-scroll-trigger="true" data-split-type="words"> 頻繁交易需要能量，願意付「省時間費」 </a>
 							</h6>
 							<p class="mb-0 gsap-text-animation" data-scroll-trigger="true" data-split-type="words" style="color: #ccc;"> 
-								在 TRON 上大量轉帳、交易、跑單的用戶，每天都在消耗能量。<br />
-								為了確保交易不中斷，他們會向穩定供應能量的節點或平台付費租借，<br />
+								在 TRON 上大量轉帳、交易、跑單的用戶，每天都在消耗能量。
+								為了確保交易不中斷，他們會向穩定供應能量的節點或平台付費租借，
 								這些「手續費節省」與「時間價值」，是第一層收入來源。
 							</p>
 						</div>
@@ -389,8 +382,8 @@ bodyClass: bg-body-tertiary
 								<a class="link d-inline-block text-light hover:text-primary gsap-text-animation" data-scroll-trigger="true" data-split-type="words"> USDT ⇄ TRX 兌換的價差與流動性需求 </a>
 							</h6>
 							<p class="mb-0 gsap-text-animation" data-scroll-trigger="true" data-split-type="words" style="color: #ccc;"> 
-								不同場景下，大家對 USDT 和 TRX 的即時需求不一樣：<br />
-								有人急著把 USDT 換成 TRX 付手續費，有人需要把 TRX 轉回 USDT。<br />
+								不同場景下，大家對 USDT 和 TRX 的即時需求不一樣：
+								有人急著把 USDT 換成 TRX 付手續費，有人需要把 TRX 轉回 USDT。
 								在大量、反覆的兌換中，會自然產生合理的價差與服務費，形成第二層收入。
 							</p>
 						</div>
@@ -406,8 +399,8 @@ bodyClass: bg-body-tertiary
 								<a class="link d-inline-block text-light hover:text-primary gsap-text-animation" data-scroll-trigger="true" data-split-type="words"> 節點投票與長期質押，產生穩定分潤 </a>
 							</h6>
 							<p class="mb-0 gsap-text-animation" data-scroll-trigger="true" data-split-type="words" style="color: #ccc;"> 
-								將 TRX 長期質押在節點上，會持續產生鏈上分潤。<br >
-								當質押規模足夠大、分散在多個節點，就能平滑單一節點波動，<br />
+								將 TRX 長期質押在節點上，會持續產生鏈上分潤。
+								當質押規模足夠大、分散在多個節點，就能平滑單一節點波動，
 								讓整體回饋趨於穩定，形成第三層收入來源。
 							</p>
 						</div>
@@ -415,9 +408,9 @@ bodyClass: bg-body-tertiary
 				</div>
 			</div>
 			<p class="text-light text-center p-6">
-				市場上你看到的 TRX 能量租借平台、USDT/ TRX 兌換機器人，<br />
-				本質都是在幫「有急迫需求的人」處理能量與兌換，<br />
-				透過租借費用、價差與節點分潤，在時間拉長後形成穩定收入。<br />
+				市場上你看到的 TRX 能量租借平台、USDT/ TRX 兌換機器人，
+				本質都是在幫「有急迫需求的人」處理能量與兌換，
+				透過租借費用、價差與節點分潤，在時間拉長後形成穩定收入。
 				TRXFlow 做的事情，是把這些分散的需求整合起來，放大規模、降低風險。
 			</p>
 		</div>
@@ -467,7 +460,7 @@ bodyClass: bg-body-tertiary
 								<h6 class="overflow-hidden">
 									<a href="about.html" class="text-light link d-inline-block hover:text-primary gsap-text-animation" data-scroll-trigger="true" data-split-type="words"> 時間與經驗 </a>
 								</h6>
-								<p class="mb-0 gsap-text-animation" data-scroll-trigger="true" data-split-type="words" style="color: #ccc;"> 
+								<p class="mb-0 gsap-text-animation text-start" data-scroll-trigger="true" data-split-type="words" style="color: #ccc;"> 
 									自 2018 年起，我們就開始參與 TRON 鏈上的質押與能量市場。。<br />
 									一開始只是為了降低自己的手續費與交易成本，<br />
 									隨著節點與合作夥伴增加，逐步擴展為多節點、多平台的能量與兌換調度系統。
@@ -484,7 +477,7 @@ bodyClass: bg-body-tertiary
 								<h6 class="overflow-hidden">
 									<a href="about.html" class="text-light link d-inline-block hover:text-primary gsap-text-animation" data-scroll-trigger="true" data-split-type="words"> 規模與「1000+ 窗口」 </a>
 								</h6>
-								<p class="mb-0 gsap-text-animation" data-scroll-trigger="true" data-split-type="words" style="color: #ccc;"> 
+								<p class="mb-0 gsap-text-animation text-start" data-scroll-trigger="true" data-split-type="words" style="color: #ccc;"> 
 									目前已有超過 1,000+ 個平台與 TG 機器人窗口，透過 TRXFlow 來調度能量與兌換流量。<br />
 									這代表我們看到的，不是單一社群或單一盤的狀況，<br />
 									而是整個 TRON 生態中，橫跨不同場景的真實交易需求。<br />
@@ -502,7 +495,7 @@ bodyClass: bg-body-tertiary
 								<h6 class="overflow-hidden">
 									<a class="text-light link d-inline-block hover:text-primary gsap-text-animation" data-scroll-trigger="true" data-split-type="words"> AI / 策略優化能力 </a>
 								</h6>
-								<p class="mb-0 gsap-text-animation" data-scroll-trigger="true" data-split-type="words" style="color: #ccc;"> 
+								<p class="mb-0 gsap-text-animation text-start" data-scroll-trigger="true" data-split-type="words" style="color: #ccc;"> 
 									在多年實際運營數據的基礎上，TRXFlow 導入策略引擎與 AI 模型，<br />
 									預估不同時段的能量需求、兌換量與節點回饋表現，<br />
 									自動調整能量出租比例、兌換價差與節點分配。<br />
@@ -514,8 +507,8 @@ bodyClass: bg-body-tertiary
 					</div>
 				</div>
 				<p class="text-light text-center">
-					也因為有這樣的規模與調度能力，我們才有條件，<br />
-					在不承諾任何固定報酬的前提下，<br />
+					也因為有這樣的規模與調度能力，我們才有條件，
+					在不承諾任何固定報酬的前提下，
 					將部分穩定的鏈上服務收入，以「資源回饋」的形式分享給參與者。<br />
 					（詳細機制僅在登入後的進階頁面說明。）
 				</p>
@@ -542,30 +535,31 @@ bodyClass: bg-body-tertiary
 					<div class="section-space-bottom gsap-text-animation"  data-scroll-trigger="true" data-split-type="words">
 						<div class="container">
 							<div class="row g-4">
-								<div class="col-md-4">
+								<div class="col-12">
 									<div
 										class="card-animation platform-card-1 d-flex flex-column p-6 p-lg-8 rounded-4 h-100 gsap-text-animation"
 										data-scroll-trigger="true" 
 										data-split-type="words"
+										style="position: relative;"
 									>
 										<div class="my-auto text-center">
 											<img
 												src="./assets/img/1216_01.png"
 												alt="image"
-												class="img-fluid"
+												class="img-fluid img-01"
 											/>
 										</div>
 										<div class="text-center mt-auto">
 											<h6 class="text-light">TRX 能量租借服務</h6>
-											<p class="mb-0 text-light">
+											<p class="py-6 mb-0 text-light">
 												依照實際交易頻率，自動為你配置適合的能量，<br />
 												降低頻繁轉帳與合約操作時的鏈上燃料成本。
 											</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-8">
-									<div class="card-animation platform-card-2 rounded-4 gradient-border h-100">
+								<div class="col-12">
+									<div class="card-animation platform-card-2 rounded-4 gradient-border h-100" style="position: relative;">
 										<div
 											class="platform-card-2__content p-6 p-lg-8 pb-0 pb-lg-0 rounded-4 gsap-text-animation"
 											data-scroll-trigger="true" 
@@ -574,7 +568,7 @@ bodyClass: bg-body-tertiary
 											<h6 class="text-light">
 												USDT ⇄ TRX 自動兌幣服務
 											</h6>
-											<p class="mb-12 text-light">
+											<p class="py-6 mb-0 text-light">
 												透過 TRXFlow 的兌換引擎，快速完成 USDT 與 TRX 的兌換與代收，<br />
  												適合需要穩定流量與結算能力的平台與團隊。
 											</p>
@@ -582,7 +576,7 @@ bodyClass: bg-body-tertiary
 												<img
 													src="{{root}}assets/img/1216_02.png"
 													alt="image"
-													class="img-fluid"
+													class="img-fluid img-02"
 												/>
 											</div>
 										</div>
@@ -906,7 +900,7 @@ bodyClass: bg-body-tertiary
 
 <!-- 區塊7:技術架構+時間軸  -->
 <div class="section-space-y pricing-section-3 position-relative z-1 container-max overflow-hidden" style="cursor: default;">
-	<div class="section-space-top">
+	<!-- <div class="section-space-top">
 		<div class="section-space-sm-bottom text-center">
 			<div class="container usage-section-1 section-space-top gsap-fade-in rounded-4" data-scroll-trigger="true" style="position: relative; padding-bottom: 2rem;">
 				<div class="section-space-sm-bottom text-center">
@@ -939,10 +933,6 @@ bodyClass: bg-body-tertiary
 								<h6 class="mt-4 mb-2 fs-18 text-light text-opacity-80">
 									01 — 使用者錢包 / 平台 / TG Bot
 								</h6>
-								<p class="mb-0 fs-14 text-light text-opacity-50">
-									Generate the information structure of the website using a visual
-									sitemap
-								</p>
 							</div>
 						</div>
 						<div
@@ -958,10 +948,6 @@ bodyClass: bg-body-tertiary
 								<h6 class="mt-4 mb-2 fs-18 text-light text-opacity-80">
 									02 — TRXFlow 資源調度引擎
 								</h6>
-								<p class="mb-0 fs-14 text-light text-opacity-50">
-									Generate the information structure of the website using a visual
-									sitemap
-								</p>
 							</div>
 						</div>
 						<div
@@ -977,10 +963,6 @@ bodyClass: bg-body-tertiary
 								<h6 class="mt-4 mb-2 fs-18 text-light text-opacity-80">
 									03 — TRON 節點、能量池與兌換流量
 								</h6>
-								<p class="mb-0 fs-14 text-light text-opacity-50">
-									Generate the information structure of the website using a visual
-									sitemap
-								</p>
 							</div>
 						</div>
 						<div
@@ -996,10 +978,6 @@ bodyClass: bg-body-tertiary
 								<h6 class="mt-4 mb-2 fs-18 text-light text-opacity-80">
 									04 — 即時監控能量需求與行情
 								</h6>
-								<p class="mb-0 fs-14 text-light text-opacity-50">
-									Generate the information structure of the website using a visual
-									sitemap
-								</p>
 							</div>
 						</div>
 						<div
@@ -1015,10 +993,6 @@ bodyClass: bg-body-tertiary
 								<h6 class="mt-4 mb-2 fs-18 text-light text-opacity-80">
 									05 — 分散節點風險，調整資源配置
 								</h6>
-								<p class="mb-0 fs-14 text-light text-opacity-50">
-									Generate the information structure of the website using a visual
-									sitemap
-								</p>
 							</div>
 						</div>
 						<div
@@ -1034,10 +1008,6 @@ bodyClass: bg-body-tertiary
 								<h6 class="mt-4 mb-2 fs-18 text-light text-opacity-80">
 									06 —  聚合多來源兌換與手續費收入
 								</h6>
-								<p class="mb-0 fs-14 text-light text-opacity-50">
-									Generate the information structure of the website using a visual
-									sitemap
-								</p>
 							</div>
 						</div>
 					</div>
@@ -1127,21 +1097,211 @@ bodyClass: bg-body-tertiary
 				/>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<div class="section-space-top">
 		<div class="section-space-sm-bottom text-center">
-			<div class="container usage-section-2 p-4 p-md-6 p-lg-12 p-xxl-18 rounded-4 h-100 position-relative z-1 overflow-hidden">
-				<div class="position-relative z-1 row g-4 align-items-center">
-					<div class="col-md-6">
+			<div class="container row usage-section-2 p-4 p-md-6 p-lg-12 p-xxl-18 rounded-4 h-100 position-relative z-1 overflow-hidden" style="width: 100%; margin: auto;">
+				<div class="col-md-6 container usage-section-1 section-space-top gsap-fade-in rounded-4" data-scroll-trigger="true" style="position: relative; padding-bottom: 2rem;">
+					<div class="section-space-sm-bottom text-center">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-md-10">
+									<h4
+										class="mt-2 mb-0 text-light overflow-hidden gsap-text-animation"
+										data-scroll-trigger="true"
+										data-split-type="words"
+									>
+										TRXFlow 技術架構
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row g-4">
+							<div
+								class="col-sm-6 col-md-4 gsap-fade-in"
+								data-scroll-trigger="true"
+								data-delay="0.05"
+							>
+								<div class="bg-dark p-4 p-md-6 rounded-3 h-100">
+									<iconify-icon
+										icon="carbon:data-structured"
+										class="fs-28 text-light"
+									></iconify-icon>
+									<h6 class="mt-4 mb-2 fs-18 text-light text-opacity-80">
+										01 — 使用者錢包 / 平台 / TG Bot
+									</h6>
+								</div>
+							</div>
+							<div
+								class="col-sm-6 col-md-4 gsap-fade-in"
+								data-scroll-trigger="true"
+								data-delay="0.1"
+							>
+								<div class="bg-dark p-4 p-md-6 rounded-3 h-100">
+									<iconify-icon
+										icon="hugeicons:database-01"
+										class="fs-28 text-light"
+									></iconify-icon>
+									<h6 class="mt-4 mb-2 fs-18 text-light text-opacity-80">
+										02 — TRXFlow 資源調度引擎
+									</h6>
+								</div>
+							</div>
+							<div
+								class="col-sm-6 col-md-4 gsap-fade-in"
+								data-scroll-trigger="true"
+								data-delay="0.15"
+							>
+								<div class="bg-dark p-4 p-md-6 rounded-3 h-100">
+									<iconify-icon
+										icon="fluent:data-usage-edit-24-regular"
+										class="fs-28 text-light"
+									></iconify-icon>
+									<h6 class="mt-4 mb-2 fs-18 text-light text-opacity-80">
+										03 — TRON 節點、能量池與兌換流量
+									</h6>
+								</div>
+							</div>
+							<div
+								class="col-sm-6 col-md-4 gsap-fade-in"
+								data-scroll-trigger="true"
+								data-delay="0.2"
+							>
+								<div class="bg-dark p-4 p-md-6 rounded-3 h-100">
+									<iconify-icon
+										icon="clarity:data-cluster-outline-alerted"
+										class="fs-28 text-light"
+									></iconify-icon>
+									<h6 class="mt-4 mb-2 fs-18 text-light text-opacity-80">
+										04 — 即時監控能量需求與行情
+									</h6>
+								</div>
+							</div>
+							<div
+								class="col-sm-6 col-md-4 gsap-fade-in"
+								data-scroll-trigger="true"
+								data-delay="0.25"
+							>
+								<div class="bg-dark p-4 p-md-6 rounded-3 h-100">
+									<iconify-icon
+										icon="ep:data-analysis"
+										class="fs-28 text-light"
+									></iconify-icon>
+									<h6 class="mt-4 mb-2 fs-18 text-light text-opacity-80">
+										05 — 分散節點風險，調整資源配置
+									</h6>
+								</div>
+							</div>
+							<div
+								class="col-sm-6 col-md-4 gsap-fade-in"
+								data-scroll-trigger="true"
+								data-delay="0.3"
+							>
+								<div class="bg-dark p-4 p-md-6 rounded-3 h-100">
+									<iconify-icon
+										icon="fluent:document-data-link-20-regular"
+										class="fs-28 text-light"
+									></iconify-icon>
+									<h6 class="mt-4 mb-2 fs-18 text-light text-opacity-80">
+										06 —  聚合多來源兌換與手續費收入
+									</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<svg
+						width="1077"
+						height="630"
+						viewBox="0 0 1077 630"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						class="position-absolute top-0 start-0 z-n1 pointer-none gsap-fade-in"
+					>
+						<g filter="url(#filter0_f_10030_4727)">
+							<path
+								d="M386.597 25.8713C367.765 -9.98451 345.223 -89.6163 299.226 -96.4622C260.733 -102.191 250.49 11.2663 303.809 114.547C432.415 319.239 545.53 344.603 648.821 359.976C752.112 375.349 804.415 329.599 809.227 297.262C814.04 264.926 789.778 214.277 621.774 189.272C453.771 164.267 405.43 61.727 386.597 25.8713Z"
+								fill="#00ff90"
+								fill-opacity="0.3"
+							/>
+						</g>
+						<defs>
+							<filter
+								id="filter0_f_10030_4727"
+								x="0.389069"
+								y="-363.337"
+								width="1076.05"
+								height="993.048"
+								filterUnits="userSpaceOnUse"
+								color-interpolation-filters="sRGB"
+							>
+								<feFlood flood-opacity="0" result="BackgroundImageFix" />
+								<feBlend
+									mode="normal"
+									in="SourceGraphic"
+									in2="BackgroundImageFix"
+									result="shape"
+								/>
+								<feGaussianBlur
+									stdDeviation="133.333"
+									result="effect1_foregroundBlur_10030_4727"
+								/>
+							</filter>
+						</defs>
+					</svg>
+					<svg
+						width="100%"
+						height="100%"
+						viewBox="0 0 1445 795"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						class="position-absolute end-0 bottom-0 z-1 pointer-none gsap-fade-in"
+					>
+						<g filter="url(#filter0_f_10030_4728)">
+							<path
+								d="M1236.19 144.456C1276.97 88.6905 1335 -40 1414.32 -40C1480.7 -40 1469.49 153.993 1353.6 314.855C1085.22 627.907 888.01 642.296 709.883 642.296C531.755 642.296 455 551.974 455 496.209C455 440.444 508.652 361.084 798.381 361.084C1088.11 361.084 1195.41 200.221 1236.19 144.456Z"
+								fill="#00bf6c"
+								fill-opacity="0.5"
+							/>
+						</g>
+						<defs>
+							<filter
+								id="filter0_f_10030_4728"
+								x="0.13623"
+								y="-494.864"
+								width="1909.73"
+								height="1592.02"
+								filterUnits="userSpaceOnUse"
+								color-interpolation-filters="sRGB"
+							>
+								<feFlood flood-opacity="0" result="BackgroundImageFix" />
+								<feBlend
+									mode="normal"
+									in="SourceGraphic"
+									in2="BackgroundImageFix"
+									result="shape"
+								/>
+								<feGaussianBlur
+									stdDeviation="227.432"
+									result="effect1_foregroundBlur_10030_4728"
+								/>
+							</filter>
+						</defs>
+					</svg>
+					<img
+						src="{{root}}assets/img/shapes/globe-shape.png"
+						alt="image"
+						class="img-fluid position-absolute top-0 end-25 pointer-none z-n1 gsap-fade-in"
+					/>
+				</div>
+				<div class="col-md-6 position-relative z-1 row align-items-center">
+					<div class="col-12">
 						<h4 class="mb-8 text-light gsap-text-animation" data-scroll-trigger="true" data-split-type="words">
 							品牌歷程時間軸
 						</h4>
-						<!-- <div
-							class="d-flex align-items-center flex-wrap row-gap-4 column-gap-6 mt-15"
-						>
-						</div> -->
 					</div>
-					<div class="col-md-6 gsap-text-animation" data-scroll-trigger="true" data-split-type="words">
+					<div class="col-12 gsap-text-animation" data-scroll-trigger="true" data-split-type="words">
 						<ul class="list timeline-2">
 							<li class="d-flex align-items-start gap-8 pb-12">
 								<div
@@ -1150,7 +1310,7 @@ bodyClass: bg-body-tertiary
 									2018
 								</div>
 								<div class="flex-grow-1">
-									<h6 class="text-light" style="font-size: 20px;">開始在 TRON 鏈質押 TRX、參與節點與能量市場</h6>
+									<h6 class="text-light text-start" style="font-size: 20px;">開始在 TRON 鏈質押 TRX、參與節點與能量市場</h6>
 								</div>
 							</li>
 							<li class="d-flex align-items-start gap-8 pb-12">
@@ -1160,7 +1320,7 @@ bodyClass: bg-body-tertiary
 									2020
 								</div>
 								<div class="flex-grow-1">
-									<h6 class="text-light" style="font-size: 20px;">建立多節點協作與資源調度模型</h6>
+									<h6 class="text-light text-start" style="font-size: 20px;">建立多節點協作與資源調度模型</h6>
 								</div>
 							</li>
 							<li class="d-flex align-items-start gap-8 pb-12">
@@ -1170,7 +1330,7 @@ bodyClass: bg-body-tertiary
 									2023
 								</div>
 								<div class="flex-grow-1">
-									<h6 class="text-light" style="font-size: 20px;">上線自動兌幣系統與 Telegram 機器人</h6>
+									<h6 class="text-light text-start" style="font-size: 20px;">上線自動兌幣系統與 Telegram 機器人</h6>
 								</div>
 							</li>
 							<li class="d-flex align-items-start gap-8 pb-12">
@@ -1180,7 +1340,7 @@ bodyClass: bg-body-tertiary
 									2025
 								</div>
 								<div class="flex-grow-1">
-									<h6 class="text-light" style="font-size: 20px;">TRXFlow 正式整合為一站式 TRON 生態技術服務平台</h6>
+									<h6 class="text-light text-start" style="font-size: 20px;">TRXFlow 正式整合為一站式 TRON 生態技術服務平台</h6>
 								</div>
 							</li>
 						</ul>
@@ -1331,7 +1491,7 @@ bodyClass: bg-body-tertiary
 <div class="section-space-y position-relative z-1 overflow-hidden" style="margin: 4rem 0;">
 	<div class="container">
 		<div class="row g-4 justify-content-between">
-			<div class="col-md-6 col-xl-5">
+			<div class="col-md-6 col-xl-5 text-center" style="margin: 4rem auto;">
 				<h3
 					class="text-light overflow-hidden gsap-text-animation"
 					data-scroll-trigger="true"
@@ -1588,7 +1748,7 @@ bodyClass: bg-body-tertiary
 </div>
 
 <!-- 區塊10:免責聲明 -->
-<div class="section-space-y" style="cursor: default;">
+<div class=" mb-6 section-space-y" style="cursor: default;">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -1596,11 +1756,11 @@ bodyClass: bg-body-tertiary
 					<div class="row g-4 justify-content-center">
 						<div class="col-md-10 col-xl-8">
 							<h3 class="mb-6 text-light max-text-6 mx-auto"> 免責聲明 </h3>
-							<p class="text-light"> TRXFlow 專注於提供 TRON 公鏈相關的鏈上技術與資源調度服務， </p>
-							<p class="text-light">包含能量租借、節點管理、自動兌幣與工具系統等功能。</p>
-							<p class="text-light">本網站所有內容僅供技術資訊與產品介紹之用，</p>
-							<p class="text-light">不構成任何形式的投資建議、報酬承諾或保證收益。</p>
-							<p class="text-light">請使用者在理解相關風險後，自主決定是否使用本服務。</p>
+							<p class="text-light"> TRXFlow 專注於提供 TRON 公鏈相關的鏈上技術與資源調度服務，
+							包含能量租借、節點管理、自動兌幣與工具系統等功能。
+							本網站所有內容僅供技術資訊與產品介紹之用，
+							不構成任何形式的投資建議、報酬承諾或保證收益。
+							請使用者在理解相關風險後，自主決定是否使用本服務。</p>
 						</div>
 					</div>
 				</div>

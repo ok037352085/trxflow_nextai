@@ -46,7 +46,97 @@
     <script src="{{root}}assets/js/SplitText.min.js"></script>
     <script src="{{root}}assets/js/ScrollSmoother.min.js"></script>
     <script src="{{root}}assets/js/app.js"></script>
-    <script src="{{root}}assets/js/snow.js"></script>
+    <script>
+        const canvas = document.getElementById('snow');
+const ctx = canvas.getContext('2d');
+
+let w, h;
+function resize() {
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resize);
+resize();
+
+const PARTICLE_COUNT = 7;
+const TRAIL_LENGTH = 30;
+
+class Particle {
+  constructor() {
+    this.reset();
+  }
+
+  reset() {
+    this.x = Math.random() * w;
+    this.y = Math.random() * h;
+    this.dir = Math.floor(Math.random() * 4) * 90;
+    this.speed = 6 + Math.random() * 2;
+    this.steps = 20 + Math.floor(Math.random() * 140);
+    this.stepCount = 0;
+    this.size = 2 + Math.random() * 2;
+    this.color = [0, 255, 0]; // RGB
+    this.trail = [{x: this.x, y: this.y, alpha: 1}];
+  }
+
+  update() {
+    if (this.stepCount >= this.steps) {
+      this.dir += (Math.random() < 0.5 ? 1 : -1) * 90;
+      this.dir %= 360;
+      this.steps = 20 + Math.floor(Math.random() * 40);
+      this.stepCount = 0;
+    }
+
+    const rad = this.dir * Math.PI / 180;
+    this.x += Math.cos(rad) * this.speed;
+    this.y += Math.sin(rad) * this.speed;
+
+    if (this.x < 0) this.x = w;
+    if (this.x > w) this.x = 0;
+    if (this.y < 0) this.y = h;
+    if (this.y > h) this.y = 0;
+
+    this.stepCount++;
+
+    this.trail.push({x: this.x, y: this.y, alpha: 1});
+    if (this.trail.length > TRAIL_LENGTH) this.trail.shift();
+
+    // 讓尾端透明度逐漸降低
+    for (let i = 0; i < this.trail.length; i++) {
+      this.trail[i].alpha = i / this.trail.length;
+    }
+  }
+
+  draw() {
+    for (let i = 1; i < this.trail.length; i++) {
+      const p0 = this.trail[i - 1];
+      const p1 = this.trail[i];
+      ctx.strokeStyle = `rgba(${this.color[0]},${this.color[1]},${this.color[2]},${p1.alpha})`;
+      ctx.lineWidth = this.size;
+      ctx.beginPath();
+      ctx.moveTo(p0.x, p0.y);
+      ctx.lineTo(p1.x, p1.y);
+      ctx.stroke();
+    }
+  }
+}
+
+const particles = [];
+for (let i = 0; i < PARTICLE_COUNT; i++) {
+  particles.push(new Particle());
+}
+
+function animate() {
+  ctx.clearRect(0, 0, w, h); // 清除粒子層自身的舊線條
+  particles.forEach(p => {
+    p.update();
+    p.draw();
+  });
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+    </script>
 </body>
 
 </html>

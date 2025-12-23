@@ -81,15 +81,39 @@
 	animation: brightnessPulse 6s ease-in-out infinite;
 }
 
+.img-01,
+.img-02 {
+	width: 30%;
+	position: absolute;
+	right: 0;
+}
+
+.img-01 {
+	top: -1rem;
+}
+
+.img-02 {
+	top: 1rem;
+}
+
+@media (max-width:767px) {
+	.img-01,
+	.img-02 {
+		width: 100%;
+		position: relative;
+		top: 0;
+	}
+}
+
 @keyframes brightnessPulse {
   0% {
-    filter: brightness(0.8);
+    filter: brightness(0.6);
   }
   50% {
-    filter: brightness(1.2);
+    filter: brightness(1);
   }
   100% {
-    filter: brightness(0.8);
+    filter: brightness(0.6);
   }
 }
 
